@@ -14,10 +14,10 @@ class Bot:
         print("paddle", paddle["x"], paddle["y"])
         print("ball", ball["x"], ball["y"])
 
-        if ball["x"] > paddle["x"]:
-            return "east"
-        elif ball["x"] < paddle["x"]:
-            return "west"
+        if ball["y"] > paddle["y"]:
+            return "north"
+        if ball["y"] < paddle["y"]:
+            return "south"
 
         # Return the direction you'd like to move here:
         # "north" "south" "east" "west" or "none"
